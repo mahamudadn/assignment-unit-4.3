@@ -6,6 +6,13 @@ console.log('***** Cart Functions *****');
 
 let basket =[];
 
+function addItems( item ) {
+
+ basket.push(item);
+
+ return true;
+
+} 
 
 
 
