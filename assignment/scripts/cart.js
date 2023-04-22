@@ -48,4 +48,11 @@ console.log(`Basket is now ${basket}`);
 
 
 
+// Called empty function, to reset basket empty.
+
+console.log( 'The basket is now empty and (expect undefined) to console logg' ,  empty());
+
+
+
+
 
