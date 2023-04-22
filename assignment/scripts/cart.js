@@ -23,6 +23,13 @@ function listItems() {
     }
 }
 
+addItems('mango');
+addItems('papaya');
+addItems('carrot');
+addItems('banana');
+addItems('beans');
+addItems('oats');
 
+listItems();
 
 
