@@ -14,6 +14,7 @@ function addItems( item ) {
 
 } 
 
+// created a function called lisItems that will loop over the basket.
 
 function listItems() {
 
@@ -22,14 +23,15 @@ function listItems() {
          
     }
 }
+// created a function called empty.
 
-addItems('mango');
-addItems('papaya');
-addItems('carrot');
-addItems('banana');
-addItems('beans');
-addItems('oats');
+function empty () {
+    basket = [] ;
 
-listItems();
+}
+
+
+
+
 
 
