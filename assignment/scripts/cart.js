@@ -52,7 +52,15 @@ console.log(`Basket is now ${basket}`);
 
 console.log( 'The basket is now empty and (expect undefined) to console logg' ,  empty());
 
-
+// created a global maxItem.
+// created function called isFull and defined its conditions.
 
 const maxItem = 5;
 
+function isFull(basket) {
+    if(basket.length < maxItem) {
+        return false;
+    } else {
+        return true;
+    } 
+} 
