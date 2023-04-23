@@ -4,6 +4,7 @@ console.log('***** Cart Functions *****');
 
 
 const maxItems = 5; // global varaible
+
 let basket =[];
 
 // added additem function. 
@@ -24,6 +25,7 @@ function addItems( item ) {
 function listItems() {
 
     for (i = 0; i < basket.length; i++) {
+
         console.log(basket[i]);
          
     }
@@ -64,6 +66,7 @@ console.log(`Basket is now ${basket}`);
 
 
 function empty () {
+
     basket = [] ;
    
    }
@@ -78,6 +81,7 @@ function empty () {
    // and false, if the basket is full.
    
     function isFull() {
+
        return basket.length >= maxItems;
      }
    
@@ -87,10 +91,15 @@ function empty () {
    
    
    function addItems(item) {
+
     if (!isFull()) {
+
       basket.push(item);
+
       return true;
+
     } else {
+
       return false;
     }
   }
