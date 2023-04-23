@@ -19,5 +19,14 @@ function addItems( item ) {
 
 } 
 
+// created a function called lisItems that will loop over the basket.
+// 
 
- 
+function listItems() {
+
+    for (i = 0; i < basket.length; i++) {
+        console.log(basket[i]);
+         
+    }
+}
+
