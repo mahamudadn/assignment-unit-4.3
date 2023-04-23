@@ -56,6 +56,7 @@ console.log( 'The basket is now empty and (expect undefined) to console logg' , 
 // created function called isFull and defined its conditions.
 
 const maxItem = 5;
+ basket =[];
 
 function isFull(basket) {
     if(basket.length < maxItem) {
@@ -64,3 +65,5 @@ function isFull(basket) {
         return true;
     } 
 } 
+
+
