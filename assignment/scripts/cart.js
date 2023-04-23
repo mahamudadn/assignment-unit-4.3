@@ -48,4 +48,25 @@ console.log('Adding oats and (expect to return)' , addItems('oats'));
 console.log(`Basket is now ${basket}`);
 
 
+// created a function called empty.
 
+
+function empty () {
+    basket = [] ;
+   
+   }
+   
+   // Called empty function, to reset basket empty.
+   
+   console.log( 'The basket is now empty and (expect undefined) to console logg' ,  empty());
+   
+   
+   // created function called isFull and defines:
+   // true if the basket is not full 
+   // and false, if the basket is full.
+   
+    function isFull() {
+       return basket.length >= maxItems;
+     }
+   
+   
