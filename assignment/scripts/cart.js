@@ -26,7 +26,7 @@ function listItems() {
 // created a function called empty.
 
 function empty () {
-    basket = [] ;
+ basket = [] ;
 
 }
 
@@ -54,5 +54,5 @@ console.log( 'The basket is now empty and (expect undefined) to console logg' , 
 
 
 
-
+const maxItem = 5;
 
