@@ -70,3 +70,19 @@ function empty () {
      }
    
    
+   // updated the addItems funtion to isfull function.
+   // used ! which means if basket is not full, then add item to the basket.
+   
+   
+   function addItems(item) {
+    if (!isFull()) {
+      basket.push(item);
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+
+
+ 
