@@ -30,3 +30,22 @@ function listItems() {
     }
 }
 
+
+// console log for each of the items i added in my basket array.
+
+console.log(`Basket is ${basket}`);
+console.log('Adding mango and (expect to return)' , addItems('mango'));
+console.log(`Basket is now ${basket}`);
+console.log('Adding papaya  and (expect to return)' , addItems('papaya'));
+console.log(`Basket is ${basket}`);
+console.log('Adding  carrot and  (expect to return)' , addItems('carrot'));
+console.log(`Basket is now ${basket}`);
+console.log('Adding  banana  and (expect to return)' , addItems('banana'));
+console.log(`Basket is ${basket}`);
+console.log('Adding beans and  (expect to return)' , addItems('beans'));
+console.log(`Basket is now ${basket}`);
+console.log('Adding oats and (expect to return)' , addItems('oats'));
+console.log(`Basket is now ${basket}`);
+
+
+
