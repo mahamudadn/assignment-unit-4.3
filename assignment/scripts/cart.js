@@ -83,6 +83,14 @@ function empty () {
     }
   }
   
+  // added items to my basket array.
+
+console.log( 'added book and expect (true)', addItems('book'));
+console.log( 'added book and expect (true)', addItems('pen'));
+console.log( 'added book and expect (true)', addItems('marker'));
+console.log( 'added book and expect (true)', addItems('table'));
+console.log( 'added book and expect (true)' , addItems('bilboard'));
+console.log( 'added book and expect (true)', addItems('pencil'));
 
 
  
