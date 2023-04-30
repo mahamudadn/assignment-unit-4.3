@@ -20,61 +20,56 @@ function addItems( item ) {
 
 } 
 
-// created a function called lisItems that will loop over the basket.
+// created a function called lisItems that will list items in the basket.
+// also will loop over it.
 
 function listItems() {
 
-    for (i = 0; i < basket.length; i++) {
+    for (let item of basket) {
+      console.log(item)
 
-        console.log(basket[i]);
-         
     }
 }
 
+// Added items to my basket
+// and loged out eacg item added.
 
-// console log for each of the items i added in my basket array.
+ addItems('mango');
+console.log(`Basket is now ${basket}`);
 
+addItems('papaya');
 console.log(`Basket is ${basket}`);
 
-console.log('Adding mango and (expect to return)' , addItems('mango'));
-
+ addItems('carrot');
 console.log(`Basket is now ${basket}`);
 
-console.log('Adding papaya  and (expect to return)' , addItems('papaya'));
-
+addItems('banana');
 console.log(`Basket is ${basket}`);
 
-console.log('Adding  carrot and  (expect to return)' , addItems('carrot'));
-
+addItems('beans');
 console.log(`Basket is now ${basket}`);
 
-console.log('Adding  banana  and (expect to return)' , addItems('banana'));
-
-console.log(`Basket is ${basket}`);
-
-console.log('Adding beans and  (expect to return)' , addItems('beans'));
-
+addItems('oats');
 console.log(`Basket is now ${basket}`);
 
-console.log('Adding oats and (expect to return)' , addItems('oats'));
+// tested the list of items added in the basket.
+// to check if my listitem is looping over items in the basket
 
-console.log(`Basket is now ${basket}`);
+console.log('tested list item')
 
+listItems();
 
 // created a function called empty.
 //that resets basket to empty.
 
 
 function empty () {
-
     basket = [] ;
-   
    }
    
    // Called empty function, to reset basket empty.
    
    console.log( 'The basket is now empty and (expect undefined) to console logg' ,  empty());
-   
    
    // created function called isFull and defines:
    // true if the basket is not full 
@@ -85,10 +80,8 @@ function empty () {
        return basket.length >= maxItems;
      }
    
-   
    // updated the addItems funtion to isfull function.
    // used ! which means if basket is not full, then add item to the basket.
-   
    
    function addItems(item) {
 
@@ -100,7 +93,7 @@ function empty () {
 
     } else {
 
-      return false;
+       return false;
     }
   }
   
@@ -118,13 +111,23 @@ console.log( 'added bilboard and expect (true)' , addItems('bilboard'));
 
 console.log( 'added pencil and expect (false) because the basket is full', addItems('pencil'));
 
+// test of list items.
+// Testing out my list item is correctly workin
 
+console.log('List items test')
+
+listItems();
+
+// Added afunction that will remove items in the basket.
 
 function removeItem(item) {
     const index = basket.indexOf(item);
+
     if (index !== -1) {
+
       const removedItem = basket.splice(index, 1);
       return removedItem[0];
+
     } else {
       return null;
     }
@@ -133,26 +136,18 @@ function removeItem(item) {
   // calling the indexOf eag of my basket.
 
   console.log('the index of the first item book is : ', basket.indexOf('book'));
-
   console.log('the index of the second item pen is : ', basket.indexOf('pen'));
-
   console.log('the index of the third item marker is : ', basket.indexOf('marker'));
-
   console.log('the index of the fourth item table is : ', basket.indexOf('table'));
-
   console.log('the index of the fith item bilboard is : ', basket.indexOf('bilboard'));
 
   // removing items from my basket using removeItem function.
   // then, logging out to see the changes.
 
   console.log('i have ', basket);
-
   console.log('i have removed ' ,removeItem('book'));
-
   console.log('now i have ' , basket);
-
   console.log('i have removed ' ,removeItem('pen'));
-
   console.log('now i have ' , basket);
 
 
