@@ -83,7 +83,7 @@ function empty () {
    // updated the addItems funtion to isfull function.
    // used ! which means if basket is not full, then add item to the basket.
    
-   function addItems(item) {
+   function stationary(item) {
 
     if (!isFull()) {
 
@@ -99,17 +99,17 @@ function empty () {
   
   // added items to my basket array.
 
-console.log( 'added book and expect (true) because the basket have space' , addItems('book'));
-console.log( 'added pen and expect (true)', addItems('pen'));
-console.log( 'added marker and expect (true)', addItems('marker'));
-console.log( 'added table and expect (true)', addItems('table'));
-console.log( 'added bilboard and expect (true)' , addItems('bilboard'));
-console.log( 'added pencil and expect (false) because the basket is full', addItems('pencil'));
+console.log( 'added book and expect (true) because the basket have space' , stationary('book'));
+console.log( 'added pen and expect (true)', stationary('pen'));
+console.log( 'added marker and expect (true)', stationary('marker'));
+console.log( 'added table and expect (true)', stationary('table'));
+console.log( 'added bilboard and expect (true)' , stationary('bilboard'));
+console.log( 'added pencil and expect (false) because the basket is full', stationary('pencil'));
 
 // test of list items.
 // Testing out my list item is correctly workin
 
-console.log('List items test')
+console.log('List of stationaty items test')
 
 listItems();
 
