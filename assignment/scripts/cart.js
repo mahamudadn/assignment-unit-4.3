@@ -100,15 +100,10 @@ function empty () {
   // added items to my basket array.
 
 console.log( 'added book and expect (true) because the basket have space' , addItems('book'));
-
 console.log( 'added pen and expect (true)', addItems('pen'));
-
 console.log( 'added marker and expect (true)', addItems('marker'));
-
 console.log( 'added table and expect (true)', addItems('table'));
-
 console.log( 'added bilboard and expect (true)' , addItems('bilboard'));
-
 console.log( 'added pencil and expect (false) because the basket is full', addItems('pencil'));
 
 // test of list items.
